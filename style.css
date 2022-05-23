@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #111;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0 20px;
+  padding: 5px;
+}
+
+.header {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  padding: 27px 3vw;
+  justify-content: center;
+  color: #fff;
+}
+
+.scroll-controlls-list {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  user-select: none;
+}
+
+.scroll-controll-item {
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 5px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.active {
+  border: 2px solid red;
+}
+
+.scroll-item {
+  position: absolute;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  background-color: #111;
+  color: #fff;
+  font-size: 50px;
+  transform: translate(0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s cubic-bezier(.55,.085,0,.99);
+  transition-timing-function: cubic-bezier(.55,.085,0,.99);
+  border: 2px solid #fff;
+  user-select: none;
+}
+
+.non-active {
+  transform: translate(0, -100vh);
+  background-color: rgb(17, 17, 17);
+}
