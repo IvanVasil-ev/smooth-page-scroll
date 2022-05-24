@@ -1,0 +1,17 @@
+{
+  "name": "smooth-page-scroll",
+  "version": "1.0.0",
+  "description": "Smooth Page Scroll application",
+  "license": "MIT",
+  "source": "src/index.html",
+  "author": {
+    "name": "Ivan Vasilev",
+    "url": "https://github.com/IvanVasil-ev"
+  },
+  "scripts": {
+    "start": "parcel"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
